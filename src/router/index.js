@@ -9,7 +9,8 @@ const router = new VueRouter({
     mode:"history",
     routes: [
         {path: "/", name: "home", component: Home},
-        {path: "/about", name: "about", component: About}
+        {path: "/about", name: "about", component: About},
+        {path: '*', redirect: '/'}
     ]
 })
  
